@@ -62,12 +62,21 @@ const Header = () => {
       ) : (
         <>
           <NavMenu>
-            <a href="/">
-              {/* <Link to={"/"}> */}
+            <Link
+              to={"/"}
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                padding: "0 12px",
+                cursor: "pointer",
+                color: "white",
+              }}
+            >
               <img src="/images/home-icon.svg" />
               <span>HOME</span>
-              {/* </Link> */}
-            </a>
+            </Link>
+
             <a>
               <img src="/images/search-icon.svg" />
               <span>SEARCH</span>
